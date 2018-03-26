@@ -1,1 +1,3 @@
-let a = () => console.log("Hello World");
+$(document).ready(function(){
+  $('.sidenav').sidenav();
+});

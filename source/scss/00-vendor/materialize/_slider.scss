@@ -48,12 +48,12 @@
       .caption {
         color: #fff;
         position: absolute;
-        top: 5%;
-        left: 5%;
-        width: 90%;
+        top: 15%;
+        left: 15%;
+        width: 70%;
         opacity: 0;
 
-        //p { color: $slider-bg-color-light; }
+        p { color: $slider-bg-color-light; }
       }
 
       &.active {
@@ -75,9 +75,9 @@
       display: inline-block;
       position: relative;
       cursor: pointer;
-      height: 12px;
-      width: 12px;
-      margin: 0 4px;
+      height: 16px;
+      width: 16px;
+      margin: 0 12px;
       background-color: $slider-bg-color-light;
 
       transition: background-color .3s;

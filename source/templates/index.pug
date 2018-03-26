@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    title Document
+    link(rel="stylesheet", href="dist/css/app.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+  body
+    //.navbar-fixed
+
+    nav
+      .container
+        .nav-wrapper
+          a(href="#!").brand-logo Logo
+          a(href="#" data-target="mobile-demo").sidenav-trigger
+            i.material-icons menu
+          ul.right.hide-on-med-and-down
+            li
+              a(href="sass.html") Features
+            li
+              a(href="badges.html") Plataforms
+            li
+              a(href="collapsible.html") Pricing
+            li 
+              a(href="#!" data-target="mobile-demo")
+                i.material-icons dehaze
+
+      ul.sidenav#mobile-demo
+        li
+          a(href="sass.html") Features
+        li
+          a(href="badges.html") Plataforms
+        li
+          a(href="collapsible.html") Pricing
+        li
+          a(href="mobile.html") Mobile
+    h1 hola
+
+
+    script(src="https://code.jquery.com/jquery-2.1.1.min.js")
+    script(src="source/js/materialize.min.js")
+    script(src="source/js/main.js")

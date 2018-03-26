@@ -1,10 +1,13 @@
 @charset "UTF-8";
 
-// Colors
-@import "00-vendor/materialize/color";
+// Color
+@import "00-vendor/materialize/color-variables";
+@import "00-vendor/materialize/color-classes";
 
 // Variables;
 @import "01-settings/variables";
+@import "03-generic/caviar";
+@import "03-generic/lemon";
 
 // Reset
 @import "00-vendor/materialize/normalize";
@@ -15,7 +18,6 @@
 @import "00-vendor/materialize/icons-material-design";
 @import "00-vendor/materialize/grid";
 @import "00-vendor/materialize/navbar";
-@import "00-vendor/materialize/roboto";
 @import "00-vendor/materialize/typography";
 @import "00-vendor/materialize/transitions";
 @import "00-vendor/materialize/cards";
@@ -31,12 +33,11 @@
 @import "00-vendor/materialize/materialbox";
 @import "00-vendor/materialize/forms/forms";
 @import "00-vendor/materialize/table_of_contents";
-@import "00-vendor/materialize/sideNav";
+@import "00-vendor/materialize/sidenav";
 @import "00-vendor/materialize/preloader";
 @import "00-vendor/materialize/slider";
 @import "00-vendor/materialize/carousel";
 @import "00-vendor/materialize/tapTarget";
 @import "00-vendor/materialize/pulse";
-@import "00-vendor/materialize/date_picker/default";
-@import "00-vendor/materialize/date_picker/default.date";
-@import "00-vendor/materialize/date_picker/default.time";
+@import "00-vendor/materialize/datepicker";
+@import "00-vendor/materialize/timepicker";
