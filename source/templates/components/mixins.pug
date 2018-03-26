@@ -1,0 +1,181 @@
+//mixin sectionSeparator(item)
+  .container
+    .o-sectionSeparator
+      .row.center-align
+        if item.subtitle
+          .col.s12
+            h4.o-sectionSeparator__category #{item.subtitle} :
+        .col.s12
+          h2.o-sectionSeparator__title #{item.title}
+            i.material-icons play_arrow
+        .col.s12
+          p.o-sectionSeparator__description #{item.description}
+        if block
+          .col.s12
+            block
+
+//mixin articleList(items)
+  .container
+    .row
+      each item in items
+        .col.s12.m4
+          +article(item)
+
+//mixin article(item)
+  a.c-article(href=item.link)
+    .c-article__image
+      img(src= item.image, alt="").responsive-img
+    .c-article__body
+      p.c-article__name= item.title
+
+//mixin previewProducts(items)
+  .row.u-margin__none
+    each item in items
+      .col.s12.m6.l3
+        a.c-product(href=item.link)
+          .c-product__image
+            each img in item.images
+              img(src= img.link, alt="")
+          .c-product__body
+            h5.c-product__name= item.title
+
+//mixin sectionTitle(title,description)
+  .o-sectionSeparator__back.container.center-align.u-padding__lr--small
+    .row
+      .col.s12
+        h2.o-sectionSeparator__back--title= title
+      .col.s12
+        h5.o-sectionSeparator__back--subtitle= description
+
+//mixin listCategory(title,items)
+  .c-listCategory&attributes(attributes)
+    h6.c-listCategory__title= title
+    ul
+      each item in items
+        li.c-listCategory__item
+          a(href= item.link).u-hover__linear.u-hover__linear--base= item.name
+
+//mixin bannerCategory(filter,items)
+  each item in items
+    if(item.name == filter)
+      .c-desCategory.row&attributes(attributes)
+        .col.s12.m8
+          a(href= item.link).c-desCategory__image
+            img(src= item.image, alt="").responsive-img
+        .col.s12.m4
+          .c-desCategory__content.center-align
+            h2.c-desCategory__title.c-title__underline= item.name
+            p.c-desCategory__description= item.description
+            each button in item.buttons
+              a.c-desCategory__button(href= button.link)= button.title
+
+//mixin galleryProduct(items)
+  each item in items
+    +product(item).pinto
+
+//mixin product(item,lorem)
+  .c-product.c-product--linear&attributes(attributes)
+      a(href= item.ruta).c-product__image
+        each image in item.images
+          if(lorem == 'lorem')
+            img(src="http://demandware.edgesuite.net/sits_pod54-pod55/dw/image/v2/AAOX_PRD/on/demandware.static/-/Sites-catalog-master/default/dwc4122c91/hi-res/ushi-res/claridge_sofa_belfast_stone.jpg?sw=768&sh=768&sm=fit", alt="").responsive-img
+          else
+            img(src= image.link, alt="").responsive-img
+      .c-product__content
+          p.c-product__category= item.category
+          a(href="#!").c-product__name.u-margin__none= item.name
+          .c-product__data
+            p.c-product__price= item.price
+              spam 500.00
+            a(href=item.ruta).c-product__button.waves-effect.waves.btn
+              i.material-icons shopping_cart
+
+
+//mixin bannerSlide(title,image,button,description)
+  .o-bannerSlide
+    p.o-bannerSlide__title= title
+    .o-bannerSlide__image
+      img(src= image, alt="" style="background-size:auto 100%;background-repeat:no-repeat;")
+    a(href="#!").o-bannerSlide__button.waves-effect.waves-light.btn= button
+    p.o-bannerSlide__description= description
+
+//mixin breadCrumbs(...items)
+  .c-history&attributes(attributes)
+    each item in items
+      a.breadcrumb.c-history__item(href="#!")= item
+
+//mixin modalRegister()
+  #modal1.modal.o-login
+    a(href="#!").o-login__close.modal-close
+      i.material-icons close
+    .modal-content
+      h4.o-login__title.center-align.u-margin__none Create Registry
+      .row.u-margin__none
+        form.col.s12
+          .row.u-margin__none
+            .input-field.col.s12.m6
+              input#first_name(type="text").validate
+              label(for="first_name") First Name
+            .input-field.col.s12.m6
+              input#last_name(type="text").validate
+              label(for="last_name") Last Name
+            .input-field.col.s12.m6
+              input#email(type="email").validate
+              label(for="email") Email
+            .input-field.col.s12.m6
+              input#email(type="email").validate
+              label(for="email") Confirm Email
+            .input-field.col.s12.m6
+              input#email(type="email").validate
+              label(for="email") Password
+            .input-field.col.s12.m6
+              input#email(type="email").validate
+              label(for="email") Confirm Password
+            .input-field.col.s12.m6.offset-m3
+              select
+                option(value="" selected) TYPE OF REGISTRY
+                option(value="1") Option 1
+                option(value="2") Option 2
+                option(value="3") Option 3
+            .col.s12.m6.offset-m3
+              p.center-align Heads up! Your gift registry login will be different from your Jonathan Adler customer account.
+            .col.s12.m6-offset-m3.center-align
+              button.o-login__button.waves-effect.waves-light.btn.u-margin__tb--small submit
+
+//mixin modalLogin()
+  #modal2.modal.o-login.o-login--small
+    a(href="#!").o-login__close.modal-close
+      i.material-icons close
+    .modal-content
+      h4.o-login__title.center-align.u-margin__none Welcome
+      h5.o-login__title.center-align LOG IN WITH YOUR EMAIL:
+      .row.u-margin__none
+        form.col.s12
+          .row.u-margin__none
+            .input-field.col.s12
+              input#email(type="email").validate
+              label(for="email") Email Address
+            .input-field.col.s12
+              input#email(type="email").validate
+              label(for="email") Password
+            .col.s12
+              a(href="#!") Forgot Password?
+            .col.s12.m6-offset-m3.center-align
+              button.o-login__button.waves-effect.waves-light.btn.u-margin__tb--small submit
+
+//mixin cardProduct(link,image,title,...enlace)
+  .c-product.u-padding__none
+    a(href= link).c-product__image
+      img(src=image, alt="")
+    p.c-product__title=title
+    each item in enlace
+      a(href="#!").c-product__link= item
+
+//mixin postCard(title, description, button)
+  .o-postCard
+    .o-postCard__image
+      img(src="http://demandware.edgesuite.net/aaox_prd/on/demandware.static/-/Sites/default/v1476179152388/images/slot/landing/Furniture%20LP/JonathanAdler_FurnitureStory_LP.jpg", alt="")
+    .o-postCard__content
+      p.o-postCard__title.u-margin__none= title
+      p.o-postCard__description= description
+      a(href="#!").u-hover__linear= button
