@@ -7,24 +7,47 @@ html(lang="es")
     link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
   body
     include blocks/menu.pug
-    header
+    header.o-header
       .container
         .row
           .col.s12.m6
-            h2 Build better software
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            a(href="#!") Try it for free
+            h2.o-header__title Build better software
+            p.o-header__description Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            a.o-header__button.waves-effect.waves-light.btn(href="#!") Try it for free
           .col.s12.m6
-            img(src="", alt="")
+            img(src="", alt="").o-header__image
     main
       .container
         .row
-          .col.s12
+          .col.s12.center-align
+            p Capture, proritize, reproduce, and fix harmful errors
           each val in [1,2,3,4]
             .col.s12.m6.l3
               img(src="", alt="")
               p Prioritize your most harmful errors
               a(href="#!") Learn More
+
+    section
+      .container
+        .row
+          .col.s12.center-align
+            p error monitoring for your entire tech stack
+          .col.s12.m6.l3
+            img(src="", alt="")
+            p Backend error monitoring
+            a(href="#!") Learn more
+          .col.s12.m6.l3
+            img(src="", alt="")
+            p Browser JS error monitoring
+            a(href="#!") Learn more
+          .col.s12.m6.l3
+            img(src="", alt="")
+            p Mobile crash reporting
+            a(href="#!") Learn more
+          .col.s12.m6.l3
+            img(src="", alt="")
+            p Desktop crash reporting
+            a(href="#!") Learn more
 
 
     script(src="https://code.jquery.com/jquery-2.1.1.min.js")
