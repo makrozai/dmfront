@@ -1,5 +1,8 @@
 # Athelas static boilerplate
 
+PLANTILLA : https://dribbble.com/shots/3167208-Bugsnag/attachments/673241
+
+
 Ahora con **Pug**
 
 
@@ -22,3 +25,5 @@ Hay varios, pero solo necesitas estos para trabajar
 **npm run watch:js**: watchers de JS
 
 **npm run imagemin**: procesa y minifica imágenes
+
+

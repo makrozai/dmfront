@@ -6,35 +6,25 @@ html(lang="es")
     link(rel="stylesheet", href="dist/css/app.css")
     link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
   body
-    //.navbar-fixed
-
-    nav
+    include blocks/menu.pug
+    header
       .container
-        .nav-wrapper
-          a(href="#!").brand-logo Logo
-          a(href="#" data-target="mobile-demo").sidenav-trigger
-            i.material-icons menu
-          ul.right.hide-on-med-and-down
-            li
-              a(href="sass.html") Features
-            li
-              a(href="badges.html") Plataforms
-            li
-              a(href="collapsible.html") Pricing
-            li 
-              a(href="#!" data-target="mobile-demo")
-                i.material-icons dehaze
-
-      ul.sidenav#mobile-demo
-        li
-          a(href="sass.html") Features
-        li
-          a(href="badges.html") Plataforms
-        li
-          a(href="collapsible.html") Pricing
-        li
-          a(href="mobile.html") Mobile
-    h1 hola
+        .row
+          .col.s12.m6
+            h2 Build better software
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            a(href="#!") Try it for free
+          .col.s12.m6
+            img(src="", alt="")
+    main
+      .container
+        .row
+          .col.s12
+          each val in [1,2,3,4]
+            .col.s12.m6.l3
+              img(src="", alt="")
+              p Prioritize your most harmful errors
+              a(href="#!") Learn More
 
 
     script(src="https://code.jquery.com/jquery-2.1.1.min.js")
