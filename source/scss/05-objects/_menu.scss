@@ -1,0 +1,10 @@
+.o-menu{
+  background: transparent;
+  box-shadow: 0 0 0 0 transparent;
+
+  &__item{
+    & a:hover{
+      background: transparent;
+    }
+  }
+}
