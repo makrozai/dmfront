@@ -23,3 +23,22 @@
 }#phone{
   transition:all .6s;
 }
+
+.u{
+  &-text{
+    &__color{
+      &--purple{
+        color: $complement__purple !important;
+      }
+      &--red{
+        color: $complement__red !important;
+      }
+      &--orange{
+        color: $complement__orange !important;
+      }
+      &--green{
+        color: $complement__green !important;
+      }
+    }
+  }
+}

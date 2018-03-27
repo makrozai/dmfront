@@ -21,12 +21,12 @@ html(lang="es")
         .row
           .col.s12.center-align
             p.o-title__main Capture, proritize, reproduce, and fix harmful errors 
-          each val in [1,2,3,4]
+          each val in ["red","purple","orange","green"]
             .col.s12.m6.l3
               .c-mainCard
                 img(src="source/img/card.png", alt="").responsive-img
                 p Prioritize your most harmful errors
-                a(href="#!") Learn More
+                a(href="#!" class='u-text__color--'+ val) Learn More
 
     section
       .container
@@ -298,6 +298,13 @@ html(lang="es")
               p Desktop crash reporting
               p.c-mainCard__button Learn more
 
+      section
+        .container
+          .row
+            .col.s12.m6
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt error labore dolorum voluptatum, doloremque omnis dolorem nemo porro beatae incidunt cumque maxime recusandae fugit. Non reprehenderit id hic temporibus ad.
+            .col.s12.m6
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt error labore dolorum voluptatum, doloremque omnis dolorem nemo porro beatae incidunt cumque maxime recusandae fugit. Non reprehenderit id hic temporibus ad.
 
     script(src="https://code.jquery.com/jquery-2.1.1.min.js")
     script(src="source/js/materialize.min.js")
