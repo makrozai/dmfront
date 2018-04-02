@@ -10,10 +10,10 @@
     transform:translateY(-50%);
   }
   &:hover &__info{
-    background: white;
+    background: lighten($primary-color,60);
   }
   &__info{
-    background: lighten($primary-color,60);
+    background: lighten($secondary-color,60);
     color:darken($off-black,15);
     width: 85%;
     margin-left: 15%;

@@ -17,7 +17,7 @@ html(lang="es")
             a.o-header__button.waves-effect.waves-light.btn(href="#!") Try it for free
           .col.s12.m6
             img(src="source/img/computer.svg", alt="").o-header__image
-    main
+    main.u-padding__tb--mlarge
       .container
         .row
           .col.s12.center-align
@@ -29,7 +29,7 @@ html(lang="es")
                 p Prioritize your most harmful errors
                 a(href="#!" class='u-text__color--'+ val) Learn More
 
-    section
+    section.u-padding__tb--mlarge
       .container
         .row
           .col.s12.center-align
@@ -299,141 +299,143 @@ html(lang="es")
               p Desktop crash reporting
               p.c-mainCard__button Learn more
 
-      section
-        .container
-          .row
-            .col.s12.m6
-              .c-testimonial
-                img(src="source/img/shopify.png", alt="").responsive-img.c-testimonial__logo
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt error labore dolorum voluptatum, doloremque omnis dolorem nemo porro beatae incidunt cumque maxime recusandae fugit. Non reprehenderit id hic temporibus ad.
-                .c-testimonial__user
-                  img(src="http://materializecss.com/images/yuna.jpg", alt="").c-testimonial__face
-                  .c-testimonial__info
-                    h6 Blake Mesdag
-                    span Developer at Shopify
-                a(href="#!").c-testimonial__story.c-mainCard__button READ STORY
-            .col.s12.m6
-              .c-testimonial
-                img(src="source/img/xoom.png", alt="").responsive-img.c-testimonial__logo
-                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt error labore dolorum voluptatum, doloremque omnis dolorem nemo porro beatae incidunt cumque maxime recusandae fugit. Non reprehenderit id hic temporibus ad.
-                .c-testimonial__user
-                  img(src="http://materializecss.com/images/yuna.jpg", alt="").c-testimonial__face
-                  .c-testimonial__info
-                    h6 Blake Mesdag
-                    span Developer at Shopify
-                a(href="#!").c-testimonial__story.c-mainCard__button READ STORY
-      section.grey.lighten-3
-        .container
-          .row
-            .col.s12
-              p.o-title__main.center-align Trusted by the world's best software companies
-          .row
-            each val in [1,2,3,4,5,6]
-              .col.s12.m6.l4
-                .c-cardTeam
-                  img(src="https://www.cssdesignawards.com/judges/images/267/jeter-chou.jpg", alt="")
-                  .c-cardTeam__info
-                    h4.c-cardTeam__name Jeter Chou
-                    span.c-cardTeam__grade Design Director
-                    span.c-cardTeam__prom 10
-                    ul
-                      li
-                        span UI
-                        span 10
-                      li
-                        span UX
-                        span 10
-                      li
-                        span INN
-                        span 10
+    section.u-padding__tb--mlarge
+      .container
+        .row
+          .col.s12.m6
+            .c-testimonial
+              img(src="source/img/shopify.png", alt="").responsive-img.c-testimonial__logo
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt error labore dolorum voluptatum, doloremque omnis dolorem nemo porro beatae incidunt cumque maxime recusandae fugit. Non reprehenderit id hic temporibus ad.
+              .c-testimonial__user
+                img(src="http://materializecss.com/images/yuna.jpg", alt="").c-testimonial__face
+                .c-testimonial__info
+                  h6 Blake Mesdag
+                  span Developer at Shopify
+              a(href="#!").c-testimonial__story.c-mainCard__button READ STORY
+          .col.s12.m6
+            .c-testimonial
+              img(src="source/img/xoom.png", alt="").responsive-img.c-testimonial__logo
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt error labore dolorum voluptatum, doloremque omnis dolorem nemo porro beatae incidunt cumque maxime recusandae fugit. Non reprehenderit id hic temporibus ad.
+              .c-testimonial__user
+                img(src="http://materializecss.com/images/yuna.jpg", alt="").c-testimonial__face
+                .c-testimonial__info
+                  h6 Blake Mesdag
+                  span Developer at Shopify
+              a(href="#!").c-testimonial__story.c-mainCard__button READ STORY
 
-      section.o-sectionParallax
+    section.u-padding__tb--mlarge
+      .container
+        .row
+          .col.s12
+            p.o-title__main.center-align Trusted by the world's best software companies
+        .row
+          each val in [1,2,3,4,5,6]
+            .col.s12.m6.l4
+              .c-cardTeam
+                img(src="https://www.cssdesignawards.com/judges/images/267/jeter-chou.jpg", alt="")
+                .c-cardTeam__info
+                  h4.c-cardTeam__name Jeter Chou
+                  span.c-cardTeam__grade Design Director
+                  span.c-cardTeam__prom 10
+                  ul
+                    li
+                      span UI
+                      span 10
+                    li
+                      span UX
+                      span 10
+                    li
+                      span INN
+                      span 10
+
+    section.o-sectionParallax
+      .container
+        .row
+          .col.s12.center-align
+            p.o-title__main Try Bugsnag free for 14 days
+            p Installation is simple. No credit card required.
+            a.waves-effect.waves-light.btn(href="#!") Get Started
+            
+    footer.o-footer
+      .container
+        .row
+          .col.s12.m2.l3
+            p.o-footer__title Features
+            ul
+              li
+                a(href="#!") Prioritize and surface
+              li
+                a(href="#!") Workflow and collaboration
+              li
+                a(href="#!") Reproduce and fix
+              li
+                a(href="#!") Improve quality over time
+              li
+                a(href="#!") Enterprise-ready
+          .col.s12.m2.l3
+            p.o-footer__title Company
+            ul
+              li
+                a(href="#!") About us
+              li
+                a(href="#!") Careers
+              li
+                a(href="#!") Blog
+              li
+                a(href="#!") Open source
+              li
+                a(href="#!") Contact us
+          .col.s12.m2.l2
+            p.o-footer__title Plataforms
+            ul
+              li
+                a(href="#!") Rails
+              li
+                a(href="#!") JavaScript
+              li
+                a(href="#!") PHP
+              li
+                a(href="#!") Laravel
+          .col.s12.m2.l2
+            p.o-footer__title
+              br
+            ul
+              li
+                a(href="#!") iOS
+              li
+                a(href="#!") Node.js
+              li
+                a(href="#!") Android
+              li
+                a(href="#!") Java
+          .col.s12.m2.l2
+            p.o-footer__title
+              br
+            ul
+              li
+                a(href="#!") Go
+              li
+                a(href="#!") .NET
+              li
+                a(href="#!") Django
+              li
+                a(href="#!") See all
+      .o-footer__copy
         .container
           .row
-            .col.s12.center-align
-              p.o-title__main Try Bugsnag free for 14 days
-              p Installation is simple. No credit card required.
-              a.waves-effect.waves-light.btn(href="#!") Get Started
-      footer.o-footer
-        .container
-          .row
-            .col.s12.m2.l3
-              p.o-footer__title Features
+            .col.s12.l6
+              p Copyright 2016 Bugsnag inc.
+            .col.s12.l6
               ul
                 li
-                  a(href="#!") Prioritize and surface
+                  a(href="#!")
+                    i.material-icons android
                 li
-                  a(href="#!") Workflow and collaboration
+                  a(href="#!")
+                    i.material-icons beenhere
                 li
-                  a(href="#!") Reproduce and fix
-                li
-                  a(href="#!") Improve quality over time
-                li
-                  a(href="#!") Enterprise-ready
-            .col.s12.m2.l3
-              p.o-footer__title Company
-              ul
-                li
-                  a(href="#!") About us
-                li
-                  a(href="#!") Careers
-                li
-                  a(href="#!") Blog
-                li
-                  a(href="#!") Open source
-                li
-                  a(href="#!") Contact us
-            .col.s12.m2.l2
-              p.o-footer__title Plataforms
-              ul
-                li
-                  a(href="#!") Rails
-                li
-                  a(href="#!") JavaScript
-                li
-                  a(href="#!") PHP
-                li
-                  a(href="#!") Laravel
-            .col.s12.m2.l2
-              p.o-footer__title
-                br
-              ul
-                li
-                  a(href="#!") iOS
-                li
-                  a(href="#!") Node.js
-                li
-                  a(href="#!") Android
-                li
-                  a(href="#!") Java
-            .col.s12.m2.l2
-              p.o-footer__title
-                br
-              ul
-                li
-                  a(href="#!") Go
-                li
-                  a(href="#!") .NET
-                li
-                  a(href="#!") Django
-                li
-                  a(href="#!") See all
-        .o-footer__copy
-          .container
-            .row
-              .col.s12.l6
-                p Copyright 2016 Bugsnag inc.
-              .col.s12.l6
-                ul
-                  li
-                    a(href="#!")
-                      i.material-icons android
-                  li
-                    a(href="#!")
-                      i.material-icons beenhere
-                  li
-                    a(href="#!")
-                      i.material-icons favorite
+                  a(href="#!")
+                    i.material-icons favorite
 
 
 

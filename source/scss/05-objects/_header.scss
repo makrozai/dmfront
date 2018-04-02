@@ -24,5 +24,11 @@
     background: white;
     color: $primary-color;
     font-weight: bold;
+
+    &:hover,&:focus{
+      background: transparent;
+      color:white;
+      box-shadow: 0 0 0 1px white inset;
+    }
   }
 }
