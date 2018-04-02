@@ -3,7 +3,9 @@
   min-height: 100vh;
   position: relative;
   color: white;
-
+  &--grey{
+    color:$off-black;
+  }
   &:after{
     content: "";
     position: absolute;
@@ -15,6 +17,9 @@
     transform:skewY(-30deg);
     transform-origin: -10% 0;
     z-index: -1;
+  }
+  &--grey:after{
+    background: color('grey','lighten-3');
   }
 
   &__title{

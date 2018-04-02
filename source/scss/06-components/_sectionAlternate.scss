@@ -1,0 +1,17 @@
+.c-sectionAlternate{
+  > div{
+    display: flex;
+    flex-wrap:wrap;
+    align-items:center;
+
+    h4{
+      font-family: $font-stack;
+    }
+  }
+  img{
+    width: 100%;
+  }
+  > div:nth-child(even){
+    flex-direction:row-reverse;
+  }
+}
