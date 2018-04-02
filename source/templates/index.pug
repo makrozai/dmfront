@@ -5,6 +5,7 @@ html(lang="es")
     title Document
     link(rel="stylesheet", href="dist/css/app.css")
     link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+    link(rel="stylesheet", href="https://file.myfontastic.com/RXeAFkVg8qdsa34K6yG3c6/icons.css")
   body
     include blocks/menu.pug
     header.o-header
@@ -302,9 +303,119 @@ html(lang="es")
         .container
           .row
             .col.s12.m6
-              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt error labore dolorum voluptatum, doloremque omnis dolorem nemo porro beatae incidunt cumque maxime recusandae fugit. Non reprehenderit id hic temporibus ad.
+              .c-testimonial
+                img(src="source/img/shopify.png", alt="").responsive-img.c-testimonial__logo
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt error labore dolorum voluptatum, doloremque omnis dolorem nemo porro beatae incidunt cumque maxime recusandae fugit. Non reprehenderit id hic temporibus ad.
+                .c-testimonial__user
+                  img(src="http://materializecss.com/images/yuna.jpg", alt="").c-testimonial__face
+                  .c-testimonial__info
+                    h6 Blake Mesdag
+                    span Developer at Shopify
+                a(href="#!").c-testimonial__story.c-mainCard__button READ STORY
             .col.s12.m6
-              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt error labore dolorum voluptatum, doloremque omnis dolorem nemo porro beatae incidunt cumque maxime recusandae fugit. Non reprehenderit id hic temporibus ad.
+              .c-testimonial
+                img(src="source/img/xoom.png", alt="").responsive-img.c-testimonial__logo
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt error labore dolorum voluptatum, doloremque omnis dolorem nemo porro beatae incidunt cumque maxime recusandae fugit. Non reprehenderit id hic temporibus ad.
+                .c-testimonial__user
+                  img(src="http://materializecss.com/images/yuna.jpg", alt="").c-testimonial__face
+                  .c-testimonial__info
+                    h6 Blake Mesdag
+                    span Developer at Shopify
+                a(href="#!").c-testimonial__story.c-mainCard__button READ STORY
+      section
+        .container
+          .row
+            .col.s12
+              p.o-title__main.center-align Trusted by the world's best software companies
+      section.o-sectionParallax
+        .container
+          .row
+            .col.s12.center-align
+              p.o-title__main Try Bugsnag free for 14 days
+              p Installation is simple. No credit card required.
+              a.waves-effect.waves-light.btn(href="#!") Get Started
+      footer.o-footer
+        .container
+          .row
+            .col.s12.m2.l3
+              p.o-footer__title Features
+              ul
+                li
+                  a(href="#!") Prioritize and surface
+                li
+                  a(href="#!") Workflow and collaboration
+                li
+                  a(href="#!") Reproduce and fix
+                li
+                  a(href="#!") Improve quality over time
+                li
+                  a(href="#!") Enterprise-ready
+            .col.s12.m2.l3
+              p.o-footer__title Company
+              ul
+                li
+                  a(href="#!") About us
+                li
+                  a(href="#!") Careers
+                li
+                  a(href="#!") Blog
+                li
+                  a(href="#!") Open source
+                li
+                  a(href="#!") Contact us
+            .col.s12.m2.l2
+              p.o-footer__title Plataforms
+              ul
+                li
+                  a(href="#!") Rails
+                li
+                  a(href="#!") JavaScript
+                li
+                  a(href="#!") PHP
+                li
+                  a(href="#!") Laravel
+            .col.s12.m2.l2
+              p.o-footer__title
+                br
+              ul
+                li
+                  a(href="#!") iOS
+                li
+                  a(href="#!") Node.js
+                li
+                  a(href="#!") Android
+                li
+                  a(href="#!") Java
+            .col.s12.m2.l2
+              p.o-footer__title
+                br
+              ul
+                li
+                  a(href="#!") Go
+                li
+                  a(href="#!") .NET
+                li
+                  a(href="#!") Django
+                li
+                  a(href="#!") See all
+        .o-footer__copy
+          .container
+            .row
+              .col.s12.l6
+                p Copyright 2016 Bugsnag inc.
+              .col.s12.l6
+                ul
+                  li
+                    a(href="#!")
+                      i.material-icons android
+                  li
+                    a(href="#!")
+                      i.material-icons beenhere
+                  li
+                    a(href="#!")
+                      i.material-icons favorite
+
+
 
     script(src="https://code.jquery.com/jquery-2.1.1.min.js")
     script(src="source/js/materialize.min.js")

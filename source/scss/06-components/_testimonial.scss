@@ -1,0 +1,41 @@
+.c-testimonial{
+  padding: 0 1rem;
+  @media #{$medium-and-up} {
+    padding: 0 4rem;
+  }
+  &__logo{
+    width: 30%;
+  }
+  > p{
+    color: color('grey','base');
+    &:after,&:before{
+      content: " \" " 
+    }
+  }
+  &__user{
+    display: flex;
+    align-items: center;
+  }
+  &__info{
+    padding-left: 1rem;
+    margin: 3rem 0;
+
+    h6{
+      font-family: $font-stack;
+      font-weight: 700;
+      margin-top: 0;
+    }
+    span{
+      font-size: .9rem;
+      color: color('grey','base');
+    }
+  }
+  &__face{
+    @extend .circle;
+    max-width: 70px;
+  }
+  &__story{
+    display: inline-block;
+    margin-top: 2rem;
+  }
+}

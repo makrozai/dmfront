@@ -1,0 +1,48 @@
+.o-footer{
+  > .container{
+    padding: 3em 0;
+  }
+  &__title{
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  ul{
+    li{
+      padding: .5rem 0;
+    }
+    a{
+      color:$off-black;
+      transition:all .3s;
+      &:hover{
+        color: $link-color;
+        letter-spacing: .2px;
+      }  
+    }
+    
+  }
+  &__copy{
+    box-shadow: 0 -1px 0 0 color('grey','lighten-3');
+    .row{
+      margin-bottom: 0;
+      display: flex;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    p{
+      text-transform: uppercase;
+      font-size: .9rem;
+      font-weight: bold;
+      letter-spacing: .5px;
+      color:color('grey','lighten-1');
+    }
+    ul{
+      display: flex;
+      justify-content:flex-end;
+      margin: 0;
+
+      li{
+        padding: 1rem .5rem;
+      }
+    }
+  }
+}
