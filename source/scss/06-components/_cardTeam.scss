@@ -9,13 +9,17 @@
     z-index: 2;
     transform:translateY(-50%);
   }
+  &:hover &__info{
+    background: white;
+  }
   &__info{
-    background: lighten($secondary-color,60);
+    background: lighten($primary-color,60);
     color:darken($off-black,15);
     width: 85%;
     margin-left: 15%;
     padding:1rem 2rem 1rem 3.5rem;
     position: relative;
+    transition:all .3s;
 
     li{
       display: flex;

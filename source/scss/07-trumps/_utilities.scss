@@ -41,4 +41,32 @@
       }
     }
   }
+  &-padding{
+    $arrows: tb lr;
+    $sizes: small medium large xlarge;
+    $sizes: (
+        none:   0,
+        small:  1rem,
+        medium: 2rem,
+        large:  3rem,
+        xlarge: 4rem
+      );
+    @each $arrow in $arrows{
+      &__#{$arrow}{
+        @each $size, $value in $sizes{
+          &--#{$size}{
+            @if $arrow == 'tb' {
+              padding-top: $value;  
+              padding-bottom: $value;  
+            }@else{
+              padding-right: $value;  
+              padding-left: $value;  
+            }
+          }
+        }
+          
+      }
+    }
+      
+  }
 }
