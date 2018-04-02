@@ -1,0 +1,40 @@
+.c-cardTeam{
+  position: relative;
+  margin: 1em 0;
+  img{
+    position: absolute;
+    height: 6rem;
+    top:50%;
+    left: 0;
+    z-index: 2;
+    transform:translateY(-50%);
+  }
+  &__info{
+    background: lighten($secondary-color,60);
+    color:darken($off-black,15);
+    width: 85%;
+    margin-left: 15%;
+    padding:1rem 2rem 1rem 3.5rem;
+    position: relative;
+
+    li{
+      display: flex;
+      justify-content:space-between;
+    }
+  }
+  &__prom{
+    font-family: $title-font;
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    font-size: 2rem;
+    transform:translateY(-50%);
+  }
+  &__name{
+    font-size: 1.2em;
+    margin: 0;
+  }
+  &__grade{
+    font-size: .9em;
+  }
+}

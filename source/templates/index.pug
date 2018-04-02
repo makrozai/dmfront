@@ -322,11 +322,31 @@ html(lang="es")
                     h6 Blake Mesdag
                     span Developer at Shopify
                 a(href="#!").c-testimonial__story.c-mainCard__button READ STORY
-      section
+      section.grey.lighten-3
         .container
           .row
             .col.s12
               p.o-title__main.center-align Trusted by the world's best software companies
+          .row
+            each val in [1,2,3,4,5,6]
+              .col.s12.m6.l4
+                .c-cardTeam
+                  img(src="https://www.cssdesignawards.com/judges/images/267/jeter-chou.jpg", alt="")
+                  .c-cardTeam__info
+                    h4.c-cardTeam__name Jeter Chou
+                    span.c-cardTeam__grade Design Director
+                    span.c-cardTeam__prom 10
+                    ul
+                      li
+                        span UI
+                        span 10
+                      li
+                        span UX
+                        span 10
+                      li
+                        span INN
+                        span 10
+
       section.o-sectionParallax
         .container
           .row
